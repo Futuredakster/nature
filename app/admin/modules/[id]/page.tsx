@@ -93,17 +93,17 @@ export default function ModuleDetailPage({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="mb-6">
         <Link href="/admin/modules" className="text-sm text-[var(--primary)] hover:underline">
           ← Back to Modules
         </Link>
       </div>
 
-      <div className="flex items-start justify-between mb-8">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 mb-3">
-            <h1 className="text-3xl font-bold text-[var(--foreground)]">{module.title}</h1>
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-4 mb-6 md:mb-8">
+        <div className="flex-1 w-full">
+          <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-3">
+            <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)]">{module.title}</h1>
             <Badge
               variant={
                 module.status === 'published' ? 'success' :
@@ -115,12 +115,12 @@ export default function ModuleDetailPage({ params }: { params: Promise<{ id: str
             {module.access_level === 'admin' && <span className="text-2xl" title="Admin Only">🔐</span>}
             {module.access_level === 'facilitators' && <span className="text-2xl" title="Facilitators Only">🔒</span>}
           </div>
-          <p className="text-sm text-[var(--foreground)] opacity-60">
+          <p className="text-xs md:text-sm text-[var(--foreground)] opacity-60">
             Version {module.version} • Updated {new Date(module.updated_at).toLocaleString()}
           </p>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex gap-2 md:gap-3 w-full lg:w-auto">
           {canEdit && (
             <Button variant="outline">✏️ Edit</Button>
           )}
@@ -170,11 +170,11 @@ export default function ModuleDetailPage({ params }: { params: Promise<{ id: str
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-2">
-                    <Button variant="outline" className="text-sm">
+                  <div className="flex gap-2 flex-shrink-0">
+                    <Button variant="outline" className="text-xs md:text-sm px-2 md:px-3">
                       👁️ Preview
                     </Button>
-                    <Button variant="outline" className="text-sm">
+                    <Button variant="outline" className="text-xs md:text-sm px-2 md:px-3">
                       📥 Download
                     </Button>
                   </div>

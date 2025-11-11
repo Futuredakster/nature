@@ -94,16 +94,16 @@ export default function NewModulePage() {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="mb-6">
         <Link href="/admin/modules" className="text-sm text-[var(--primary)] hover:underline">
           ← Back to Modules
         </Link>
       </div>
 
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">Create New Module</h1>
-        <p className="text-[var(--foreground)] opacity-60">
+      <div className="mb-6 md:mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">Create New Module</h1>
+        <p className="text-sm md:text-base text-[var(--foreground)] opacity-60">
           Add a new resource to the password-protected module library
         </p>
       </div>
@@ -284,13 +284,13 @@ export default function NewModulePage() {
               </p>
             </div>
 
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 type="button"
                 variant="outline"
                 onClick={() => router.push('/admin/modules')}
                 disabled={isSubmitting}
-                className="min-w-[100px]"
+                className="min-w-[100px] flex-1 sm:flex-initial"
               >
                 Cancel
               </Button>
@@ -301,7 +301,7 @@ export default function NewModulePage() {
                 onClick={() => setFormData({ ...formData, status: 'draft' })}
                 disabled={isSubmitting}
                 isLoading={isSubmitting && formData.status === 'draft'}
-                className="min-w-[130px]"
+                className="min-w-[130px] flex-1 sm:flex-initial"
               >
                 Save as Draft
               </Button>
@@ -313,7 +313,7 @@ export default function NewModulePage() {
                   onClick={() => setFormData({ ...formData, status: 'published' })}
                   disabled={isSubmitting}
                   isLoading={isSubmitting && formData.status === 'published'}
-                  className="min-w-[130px]"
+                  className="min-w-[130px] flex-1 sm:flex-initial"
                 >
                   Publish Now
                 </Button>

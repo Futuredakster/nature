@@ -9,14 +9,15 @@ export default function Home() {
         <nav className="container-main py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-3xl">🏔️</span>
-            <h1 className="text-xl font-bold text-[var(--primary)]">Resilience Platform</h1>
+            <h1 className="text-lg md:text-xl font-bold text-[var(--primary)]">Resilience Platform</h1>
           </div>
-          <div className="flex items-center gap-3">
-            <Link href="/login" className="btn btn-outline min-w-[110px]">
+          <div className="flex items-center gap-2 md:gap-3">
+            <Link href="/login" className="btn btn-outline text-sm md:text-base px-4 md:px-5 min-w-[90px] md:min-w-[110px]">
               Sign In
             </Link>
-            <Link href="/admin" className="btn btn-primary min-w-[110px]">
-              Admin Portal
+            <Link href="/admin" className="btn btn-primary text-sm md:text-base px-4 md:px-5 min-w-[90px] md:min-w-[110px]">
+              <span className="hidden sm:inline">Admin Portal</span>
+              <span className="sm:hidden">Admin</span>
             </Link>
           </div>
         </nav>
@@ -24,7 +25,7 @@ export default function Home() {
 
       <main>
         {/* Hero with Mountain Background */}
-        <section className="relative py-32 text-center overflow-hidden">
+        <section className="relative py-16 md:py-32 text-center overflow-hidden">
           {/* Mountain Background with SVG */}
           <div className="absolute inset-0 z-0">
             {/* Sky gradient */}
@@ -94,11 +95,11 @@ export default function Home() {
             <p className="text-lg md:text-xl text-[var(--deep-earth)] max-w-2xl mx-auto mb-8 drop-shadow-sm font-medium">
               Building emotional resilience for guides, search and rescue teams, and wilderness professionals.
             </p>
-            <div className="flex items-center justify-center gap-4">
-              <Link href="/signup" className="btn btn-primary text-base px-8 py-3 shadow-lg">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
+              <Link href="/signup" className="btn btn-primary text-base px-8 py-3 shadow-lg w-full sm:w-auto min-w-[200px]">
                 Get Started
               </Link>
-              <Link href="/learn-more" className="btn btn-outline text-base px-8 py-3 bg-white/80 backdrop-blur-sm shadow-lg">
+              <Link href="/learn-more" className="btn btn-outline text-base px-8 py-3 bg-white/80 backdrop-blur-sm shadow-lg w-full sm:w-auto min-w-[200px]">
                 Learn More
               </Link>
             </div>

@@ -53,10 +53,10 @@ export default function AdminDashboard() {
   }
 
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">Dashboard</h1>
-        <p className="text-[var(--foreground)] opacity-60">
+    <div className="p-4 md:p-8">
+      <div className="mb-6 md:mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">Dashboard</h1>
+        <p className="text-sm md:text-base text-[var(--foreground)] opacity-60">
           Overview of your resilience coaching platform
         </p>
       </div>

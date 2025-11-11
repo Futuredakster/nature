@@ -88,30 +88,30 @@ export default function ProgramDetailPage({ params }: { params: Promise<{ id: st
     program.type === 'workshop' ? 'Workshop' : 'Certification';
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="mb-6">
         <Link href="/admin/programs" className="text-sm text-[var(--primary)] hover:underline">
           ← Back to Programs
         </Link>
       </div>
 
-      <div className="flex items-start justify-between mb-8">
-        <div className="flex-1">
-          <div className="flex items-center gap-3 mb-3">
-            <h1 className="text-3xl font-bold text-[var(--foreground)]">{program.title}</h1>
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-4 mb-6 md:mb-8">
+        <div className="flex-1 w-full">
+          <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-3">
+            <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)]">{program.title}</h1>
             <Badge variant="info">{programTypeLabel}</Badge>
             <Badge variant={program.enrollment_settings.open ? 'success' : 'warning'}>
               {program.enrollment_settings.open ? 'Open' : 'Closed'}
             </Badge>
           </div>
-          <p className="text-sm text-[var(--foreground)] opacity-60">
+          <p className="text-xs md:text-sm text-[var(--foreground)] opacity-60">
             Created {new Date(program.created_at).toLocaleDateString()}
           </p>
         </div>
 
-        <div className="flex gap-3">
-          <Button variant="outline">✏️ Edit</Button>
-          <Button variant="primary">👥 Manage Enrollment</Button>
+        <div className="flex flex-col sm:flex-row gap-2 md:gap-3 w-full lg:w-auto">
+          <Button variant="outline" className="flex-1 sm:flex-initial">✏️ Edit</Button>
+          <Button variant="primary" className="flex-1 sm:flex-initial">👥 Manage Enrollment</Button>
         </div>
       </div>
 

@@ -80,19 +80,19 @@ export default function ModulesPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="flex items-start justify-between mb-8">
-        <div>
-          <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2 flex items-center gap-2">
+    <div className="p-4 md:p-8">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-4 mb-6 md:mb-8">
+        <div className="flex-1">
+          <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2 flex items-center gap-2">
             🔒 Modules
           </h1>
-          <p className="text-[var(--foreground)] opacity-60">
+          <p className="text-sm md:text-base text-[var(--foreground)] opacity-60">
             Password-protected resource library for coaching materials
           </p>
         </div>
         {canUpload && (
           <Link href="/admin/modules/new">
-            <Button variant="primary">
+            <Button variant="primary" className="w-full sm:w-auto">
               📚 Add Module
             </Button>
           </Link>
@@ -122,7 +122,7 @@ export default function ModulesPage() {
 
       {/* Filters */}
       <Card className="mb-6">
-        <div className="grid md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <Input
             type="search"
             placeholder="Search modules..."
@@ -170,7 +170,7 @@ export default function ModulesPage() {
       </Card>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6">
         <Card className="text-center">
           <p className="text-2xl font-bold text-[var(--foreground)]">{modules.length}</p>
           <p className="text-sm text-[var(--foreground)] opacity-60">Total Modules</p>
@@ -196,7 +196,7 @@ export default function ModulesPage() {
       </div>
 
       {/* Modules Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {filteredModules.length === 0 ? (
           <Card className="col-span-full text-center py-12">
             <p className="text-[var(--foreground)] opacity-60">

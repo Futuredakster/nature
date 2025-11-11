@@ -46,19 +46,19 @@ export default function SessionsPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="flex items-start justify-between mb-8">
-        <div>
-          <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">Sessions & Events</h1>
-          <p className="text-[var(--foreground)] opacity-60">
+    <div className="p-4 md:p-8">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-4 mb-6 md:mb-8">
+        <div className="flex-1">
+          <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">Sessions & Events</h1>
+          <p className="text-sm md:text-base text-[var(--foreground)] opacity-60">
             Manage coaching sessions and workshop schedules
           </p>
         </div>
-        <Button variant="primary">📅 Schedule Session</Button>
+        <Button variant="primary" className="w-full sm:w-auto">📅 Schedule Session</Button>
       </div>
 
       {/* Filter Tabs */}
-      <div className="flex gap-2 mb-6">
+      <div className="flex flex-wrap gap-2 mb-6">
         <Button
           variant={filter === 'upcoming' ? 'primary' : 'outline'}
           onClick={() => setFilter('upcoming')}
@@ -88,8 +88,8 @@ export default function SessionsPage() {
         ) : (
           filteredSessions.map((session) => (
             <Card key={session.id}>
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
+              <div className="flex flex-col lg:flex-row items-start justify-between gap-4">
+                <div className="flex-1 w-full">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="font-semibold text-lg text-[var(--foreground)]">
                       {session.title}
@@ -119,9 +119,9 @@ export default function SessionsPage() {
                   </div>
                 </div>
 
-                <div className="flex gap-2">
-                  <Button variant="outline" className="text-sm">View</Button>
-                  <Button variant="outline" className="text-sm">Edit</Button>
+                <div className="flex gap-2 w-full lg:w-auto">
+                  <Button variant="outline" className="text-sm flex-1 lg:flex-initial">View</Button>
+                  <Button variant="outline" className="text-sm flex-1 lg:flex-initial">Edit</Button>
                 </div>
               </div>
             </Card>

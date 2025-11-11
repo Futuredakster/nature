@@ -211,17 +211,17 @@ export default function UsersPage() {
   }
 
   return (
-    <div className="p-8">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">User Management</h1>
-        <p className="text-[var(--foreground)] opacity-60">
+    <div className="p-4 md:p-8">
+      <div className="mb-6 md:mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-[var(--foreground)] mb-2">User Management</h1>
+        <p className="text-sm md:text-base text-[var(--foreground)] opacity-60">
           Manage users, roles, and permissions
         </p>
       </div>
 
       {/* Filters */}
       <Card className="mb-6">
-        <div className="grid md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <Input
             type="search"
             placeholder="Search users..."
@@ -260,7 +260,7 @@ export default function UsersPage() {
       </Card>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6">
         <Card className="text-center">
           <p className="text-2xl font-bold text-[var(--foreground)]">{users.length}</p>
           <p className="text-sm text-[var(--foreground)] opacity-60">Total Users</p>
