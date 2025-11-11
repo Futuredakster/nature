@@ -92,8 +92,7 @@ export default function Home() {
               for Backcountry Adventurers
             </h2>
             <p className="text-lg md:text-xl text-[var(--deep-earth)] max-w-2xl mx-auto mb-8 drop-shadow-sm font-medium">
-              Building emotional resilience for guides, search and rescue teams,
-              wilderness professionals, and outdoor enthusiasts facing challenging situations in remote environments.
+              Building emotional resilience for guides, search and rescue teams, and wilderness professionals.
             </p>
             <div className="flex items-center justify-center gap-4">
               <Link href="/signup" className="btn btn-primary text-base px-8 py-3 shadow-lg">
@@ -124,9 +123,7 @@ export default function Home() {
                   1-on-1 Coaching
                 </h4>
                 <p className="text-[var(--foreground)] opacity-70 mb-4 flex-1">
-                  Personalized resilience coaching for individuals. Work one-on-one with
-                  certified coaches who understand the unique challenges of backcountry
-                  environments and wilderness trauma.
+                  Personalized resilience coaching for individuals. Work one-on-one with certified coaches who understand backcountry challenges and wilderness trauma.
                 </p>
                 <div className="text-sm text-[var(--foreground)] opacity-60 mb-4">
                   <strong>For:</strong> Individual guides, professionals, adventurers
@@ -143,9 +140,7 @@ export default function Home() {
                   Team Workshops
                 </h4>
                 <p className="text-[var(--foreground)] opacity-70 mb-4 flex-1">
-                  Group workshops designed for search and rescue teams, ski patrols,
-                  and wilderness response teams. Build collective resilience and develop
-                  effective debriefing protocols.
+                  Group workshops for SAR teams, ski patrols, and wilderness response teams. Build collective resilience and develop effective debriefing protocols.
                 </p>
                 <div className="text-sm text-[var(--foreground)] opacity-60 mb-4">
                   <strong>For:</strong> SAR teams, outdoor organizations, response teams
@@ -162,9 +157,7 @@ export default function Home() {
                   Facilitator Certification
                 </h4>
                 <p className="text-[var(--foreground)] opacity-70 mb-4 flex-1">
-                  Comprehensive training program for aspiring facilitators. Learn
-                  trauma-informed care principles, facilitation techniques, and
-                  nature-based therapeutic approaches.
+                  Comprehensive training for aspiring facilitators. Learn trauma-informed care, facilitation techniques, and nature-based therapeutic approaches.
                 </p>
                 <div className="text-sm text-[var(--foreground)] opacity-60 mb-4">
                   <strong>For:</strong> Coaches, therapists, team leaders, educators
@@ -231,8 +224,7 @@ export default function Home() {
               Ready to Begin Your Journey?
             </h3>
             <p className="text-[var(--foreground)] opacity-70 mb-8 max-w-xl mx-auto">
-              Join our community of backcountry professionals building emotional resilience
-              and supporting each other through challenges.
+              Join our community of backcountry professionals building emotional resilience and supporting each other.
             </p>
             <Link href="/signup" className="btn btn-primary text-base px-8 py-3">
               Sign Up Now
