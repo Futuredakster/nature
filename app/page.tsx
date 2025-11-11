@@ -89,11 +89,11 @@ export default function Home() {
           {/* Content */}
           <div className="container-main relative z-10">
             <h2 className="text-4xl md:text-6xl font-bold text-[var(--deep-earth)] mb-6 drop-shadow-sm">
-              Trauma-Informed, Nature-Based Coaching <br />
-              for Backcountry Adventurers
+              Trauma-Informed Coaching & Training <br />
+              for Mountain Professionals
             </h2>
-            <p className="text-lg md:text-xl text-[var(--deep-earth)] max-w-2xl mx-auto mb-8 drop-shadow-sm font-medium">
-              Building emotional resilience for guides, search and rescue teams, and wilderness professionals.
+            <p className="text-lg md:text-xl text-[var(--deep-earth)] max-w-3xl mx-auto mb-8 drop-shadow-sm font-medium">
+              Build resilience through evidence-based coaching, team workshops, and facilitator training. Supporting those affected by mountain trauma and helping individuals overcome fear.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
               <Link href="/signup" className="btn btn-primary text-base px-8 py-3 shadow-lg w-full sm:w-auto min-w-[200px]">
@@ -110,10 +110,10 @@ export default function Home() {
         <section className="py-20">
           <div className="container-main">
             <h3 className="text-3xl font-bold text-center text-[var(--foreground)] mb-4">
-              Our Services
+              Coaching & Training Programs
             </h3>
-            <p className="text-center text-[var(--foreground)] opacity-70 mb-12 max-w-2xl mx-auto">
-              We offer three core pathways to support your journey toward emotional resilience
+            <p className="text-center text-[var(--foreground)] opacity-70 mb-12 max-w-3xl mx-auto">
+              Evidence-based programs for mountain professionals, teams, and aspiring facilitators. Access our growing library of password-protected resources.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -124,10 +124,10 @@ export default function Home() {
                   1-on-1 Coaching
                 </h4>
                 <p className="text-[var(--foreground)] opacity-70 mb-4 flex-1">
-                  Personalized resilience coaching for individuals. Work one-on-one with certified coaches who understand backcountry challenges and wilderness trauma.
+                  Work one-on-one with certified coaches who understand backcountry challenges. Process traumatic incidents, build coping strategies, or overcome mountain-related fears.
                 </p>
                 <div className="text-sm text-[var(--foreground)] opacity-60 mb-4">
-                  <strong>For:</strong> Individual guides, professionals, adventurers
+                  <strong>For:</strong> Individuals seeking personalized support
                 </div>
                 <Link href="/programs/coaching" className="btn btn-primary w-full">
                   Learn More
@@ -141,10 +141,10 @@ export default function Home() {
                   Team Workshops
                 </h4>
                 <p className="text-[var(--foreground)] opacity-70 mb-4 flex-1">
-                  Group workshops for SAR teams, ski patrols, and wilderness response teams. Build collective resilience and develop effective debriefing protocols.
+                  Critical incident debriefings, resilience training, and team workshops. Build collective resilience and establish debriefing protocols for your organization.
                 </p>
                 <div className="text-sm text-[var(--foreground)] opacity-60 mb-4">
-                  <strong>For:</strong> SAR teams, outdoor organizations, response teams
+                  <strong>For:</strong> SAR teams, ski patrol, guide companies, outdoor organizations
                 </div>
                 <Link href="/programs/workshops" className="btn btn-primary w-full">
                   Learn More
@@ -171,49 +171,43 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Choose Us */}
+        {/* Who We Support */}
         <section className="py-20 bg-[var(--light-sage)]">
           <div className="container-main">
-            <h3 className="text-3xl font-bold text-center text-[var(--foreground)] mb-12">
-              Why Our Approach Works
+            <h3 className="text-3xl font-bold text-center text-[var(--foreground)] mb-4">
+              Our Approach
             </h3>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="flex gap-4">
-                <div className="text-2xl">🌲</div>
-                <div>
-                  <h4 className="font-semibold text-[var(--foreground)] mb-2">Nature-Based</h4>
-                  <p className="text-[var(--foreground)] opacity-70 text-sm">
-                    Leverage the healing power of natural environments in our therapeutic approach
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="text-2xl">🧠</div>
-                <div>
-                  <h4 className="font-semibold text-[var(--foreground)] mb-2">Trauma-Informed</h4>
-                  <p className="text-[var(--foreground)] opacity-70 text-sm">
-                    Evidence-based care grounded in understanding of trauma and neurobiology
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="text-2xl">⛰️</div>
-                <div>
-                  <h4 className="font-semibold text-[var(--foreground)] mb-2">Backcountry Focused</h4>
-                  <p className="text-[var(--foreground)] opacity-70 text-sm">
-                    Specialized expertise in wilderness and remote environment challenges
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="text-2xl">🤝</div>
-                <div>
-                  <h4 className="font-semibold text-[var(--foreground)] mb-2">Community-Centered</h4>
-                  <p className="text-[var(--foreground)] opacity-70 text-sm">
-                    Build connections with others who understand your experiences
-                  </p>
-                </div>
-              </div>
+            <p className="text-center text-[var(--foreground)] opacity-70 mb-12 max-w-3xl mx-auto">
+              Trauma-informed, evidence-based training and coaching designed specifically for mountain environments
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+              <Card className="flex flex-col items-center text-center">
+                <div className="text-4xl mb-3">🧠</div>
+                <h4 className="font-semibold text-[var(--foreground)] mb-2">Trauma-Informed</h4>
+                <p className="text-[var(--foreground)] opacity-70 text-sm">
+                  Evidence-based methods grounded in trauma science, neurobiology, and PTSD research
+                </p>
+              </Card>
+              <Card className="flex flex-col items-center text-center">
+                <div className="text-4xl mb-3">⛰️</div>
+                <h4 className="font-semibold text-[var(--foreground)] mb-2">Mountain-Focused</h4>
+                <p className="text-[var(--foreground)] opacity-70 text-sm">
+                  Specialized expertise in avalanche incidents, rescue work, and backcountry challenges
+                </p>
+              </Card>
+              <Card className="flex flex-col items-center text-center">
+                <div className="text-4xl mb-3">📚</div>
+                <h4 className="font-semibold text-[var(--foreground)] mb-2">Resource Library</h4>
+                <p className="text-[var(--foreground)] opacity-70 text-sm">
+                  Password-protected modules with training materials, guides, and community support
+                </p>
+              </Card>
+            </div>
+
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-[var(--foreground)] opacity-70 text-sm">
+                <strong>Supporting:</strong> Mountain professionals dealing with critical incidents • SAR teams and ski patrol • Individuals with mountain-related fears or phobias • Aspiring facilitators and coaches
+              </p>
             </div>
           </div>
         </section>
@@ -224,8 +218,8 @@ export default function Home() {
             <h3 className="text-3xl font-bold text-[var(--foreground)] mb-4">
               Ready to Begin Your Journey?
             </h3>
-            <p className="text-[var(--foreground)] opacity-70 mb-8 max-w-xl mx-auto">
-              Join our community of backcountry professionals building emotional resilience and supporting each other.
+            <p className="text-[var(--foreground)] opacity-70 mb-8 max-w-2xl mx-auto">
+              Join our growing community of mountain professionals, teams, and individuals building resilience together.
             </p>
             <Link href="/signup" className="btn btn-primary text-base px-8 py-3">
               Sign Up Now
