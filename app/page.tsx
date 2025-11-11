@@ -12,10 +12,10 @@ export default function Home() {
             <h1 className="text-xl font-bold text-[var(--primary)]">Resilience Platform</h1>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/login" className="btn btn-outline">
+            <Link href="/login" className="btn btn-outline min-w-[110px]">
               Sign In
             </Link>
-            <Link href="/admin" className="btn btn-primary">
+            <Link href="/admin" className="btn btn-primary min-w-[110px]">
               Admin Portal
             </Link>
           </div>

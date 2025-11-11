@@ -12,8 +12,8 @@ export default function LearnMorePage() {
             <h1 className="text-xl font-bold text-[var(--primary)]">Resilience Platform</h1>
           </Link>
           <div className="flex items-center gap-3">
-            <Link href="/login" className="btn btn-outline">Sign In</Link>
-            <Link href="/signup" className="btn btn-primary">Get Started</Link>
+            <Link href="/login" className="btn btn-outline min-w-[120px]">Sign In</Link>
+            <Link href="/signup" className="btn btn-primary min-w-[120px]">Get Started</Link>
           </div>
         </nav>
       </header>

@@ -290,6 +290,7 @@ export default function NewModulePage() {
                 variant="outline"
                 onClick={() => router.push('/admin/modules')}
                 disabled={isSubmitting}
+                className="min-w-[100px]"
               >
                 Cancel
               </Button>
@@ -300,6 +301,7 @@ export default function NewModulePage() {
                 onClick={() => setFormData({ ...formData, status: 'draft' })}
                 disabled={isSubmitting}
                 isLoading={isSubmitting && formData.status === 'draft'}
+                className="min-w-[130px]"
               >
                 Save as Draft
               </Button>
@@ -311,6 +313,7 @@ export default function NewModulePage() {
                   onClick={() => setFormData({ ...formData, status: 'published' })}
                   disabled={isSubmitting}
                   isLoading={isSubmitting && formData.status === 'published'}
+                  className="min-w-[130px]"
                 >
                   Publish Now
                 </Button>

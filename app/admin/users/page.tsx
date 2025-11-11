@@ -305,10 +305,10 @@ export default function UsersPage() {
         title={selectedUser?.name || 'User Details'}
         footer={
           <>
-            <Button variant="outline" onClick={() => setIsModalOpen(false)}>
+            <Button variant="outline" onClick={() => setIsModalOpen(false)} className="min-w-[120px]">
               Cancel
             </Button>
-            <Button variant="primary" onClick={handleSaveUser}>
+            <Button variant="primary" onClick={handleSaveUser} className="min-w-[120px]">
               Save Changes
             </Button>
           </>
